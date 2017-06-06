@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">BikeIt</string>
+    <string name="title_station_detail">Station Detail</string>
+    <string name="share_to" translatable="false">Partager..</string>
+    <string name="label_status" translatable="false">Status: </string>
+    <string name="label_place" translatable="false">place(s)</string>
+    <string name="label_address" translatable="false">Adresse : </string>
+    <string name="label_last_update" translatable="false">Dernière mise à jour : </string>
+    <string name="search_title" translatable="false">Rechercher</string>
+    <string name="search_hint" translatable="false">Nom de la station</string>
+    <string name="group_title" translatable="false">Le groupe</string>
+    <string name="group_alert" translatable="false">Ce projet a été réalisé par :\n\n - Florent `youino_f` YOUINOU\n - Kevin `louzou_k` LOUZOUN</string>
+</resources>

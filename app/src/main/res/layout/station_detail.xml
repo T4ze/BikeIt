@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="000000"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:id="@+id/station_id"
+        style="?android:attr/textAppearanceLarge"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom de la station"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:id="@+id/station_name"
+        style="?android:attr/textAppearanceLarge"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="60dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/label_status"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            style="?android:attr/textAppearanceLarge"
+            xmlns:android="http://schemas.android.com/apk/res/android" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/status"
+            app:srcCompat="@drawable/ic_fiber_manual_record_black_24dp"
+            android:tint="@color/success"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/available_bike_stands"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            style="?android:attr/textAppearanceLarge"
+            xmlns:android="http://schemas.android.com/apk/res/android" />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="/"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            xmlns:android="http://schemas.android.com/apk/res/android" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="30"
+            android:id="@+id/bike_stands"
+            style="?android:attr/textAppearanceLarge"
+            android:paddingLeft="10dp"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/label_place"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingLeft="10dp"
+            android:text="@string/label_address" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/address"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="40dp"
+            android:text="47 RUE BUFFON\n75005 PARIS"
+            tools:context="com.epita.mti.bikeit.StationDetailFragment" />
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:tint="@color/colorPrimaryDark"
+        app:layout_anchor="@+id/container"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_share_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/label_last_update" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:text="07:56:57 20/04/2017"
+            android:id="@+id/last_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
